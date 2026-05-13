@@ -32,7 +32,7 @@ if (isset($tagcateContext) && $tagcateContext && $tagcateContext->tags && $tagca
                    @if ($itemTagDisplay)
                        {{ $itemTagDisplay }}
                    @else
-                       {{ languageName($pro->cate->name) }}
+                       {{ languageName(optional($pro->cate)->name) }}
                    @endif
                </a>
            </h3>
